@@ -30,3 +30,27 @@ In this task we have to create an HTML page with a <form> element containing an 
     and then write a JavaScript function that, when the form is submitted, validates the input field.If the
 input is empty,display an error message next to the input field. If the input is not empty, display an alert with
 the message "Form Submitted!" -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+    <style>
+      #errorText {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="myForm">
+      <label for="textInput">Enter something:</label>
+      <input type="text" id="textInput" name="textInput" />
+      <span id="errorText" class="error-message"></span><br />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
